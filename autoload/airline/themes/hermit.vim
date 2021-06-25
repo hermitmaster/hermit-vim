@@ -2,7 +2,7 @@
 
 let s:inactive = airline#themes#get_highlight('StatusLineNC')
 let s:active2 = airline#themes#get_highlight('StatusLine')
-let s:active3 = airline#themes#get_highlight2(['StatusLine', 'fg'], ['Xgray1', 'bg'])
+let s:active3 = airline#themes#get_highlight2(['StatusLine', 'fg'], ['TabLineFill', 'bg'])
 let s:modified   = { 'airline_c': airline#themes#get_highlight('DiffAdd')}
 
 let g:airline#themes#hermit#palette = {
@@ -26,7 +26,7 @@ let g:airline#themes#hermit#palette = {
           \ ),
       \ 'insert_modified': s:modified,
       \ 'normal': airline#themes#generate_color_map(
-          \ airline#themes#get_highlight2(['StatusLine', 'fg'], ['Xgray4', 'bg']),
+          \ airline#themes#get_highlight2(['StatusLine', 'fg'], ['TablineSel', 'bg']),
           \ s:active2,
           \ s:active3
           \ ),
@@ -60,3 +60,4 @@ let g:airline#themes#hermit#palette.terminal.airline_term = s:active3
 " }}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker :
+

@@ -12,18 +12,18 @@ let g:colors_name = "hermit"
 " }}}
 " Core: {{{
 
-hi ColorColumn                              ctermbg=236   cterm=none
+hi ColorColumn                              ctermbg=235   cterm=none
 hi Comment                    ctermfg=8                   cterm=italic
 hi Constant                   ctermfg=13
 hi Cursor                                                 cterm=inverse
-hi CursorLineNr               ctermfg=3     ctermbg=none
+hi CursorLineNr               ctermfg=3     ctermbg=none  cterm=none
 hi Delimiter                  ctermfg=8
 hi DiffAdd                    ctermfg=2     ctermbg=none
 hi DiffChange                 ctermfg=6     ctermbg=none
 hi DiffDelete                 ctermfg=1     ctermbg=none
 hi DiffText                   ctermfg=3     ctermbg=none
-hi Directory                  ctermfg=2                   cterm=bold
-hi EndOfBuffer                ctermfg=0
+hi Directory                  ctermfg=4                   cterm=bold
+hi EndOfBuffer                ctermfg=none
 hi Error                      ctermfg=15    ctermbg=1
 hi Folded                     ctermfg=8     ctermbg=none  cterm=italic
 hi Function                   ctermfg=3
@@ -53,19 +53,13 @@ hi StatusLine                 ctermfg=15    ctermbg=237   cterm=bold
 hi StatusLineNC               ctermfg=8     ctermbg=237   cterm=none
 hi String                     ctermfg=10
 hi Structure                  ctermfg=6
-hi TabLineFill                ctermfg=8     ctermbg=237
+hi TabLineFill                ctermfg=8     ctermbg=235
 hi TablineSel                 ctermfg=15    ctermbg=239
 hi Title                      ctermfg=2                   cterm=bold
 hi Type                       ctermfg=12
 hi Underlined                 ctermfg=4                   cterm=underline
-hi VertSplit                  ctermfg=15                  cterm=none
+hi VertSplit                  ctermfg=235                  cterm=none
 hi WildMenu                   ctermfg=4                   cterm=bold
-hi Xgray1                     ctermfg=235   ctermbg=235
-hi Xgray2                     ctermfg=236   ctermbg=236
-hi Xgray3                     ctermfg=237   ctermbg=237
-hi Xgray4                     ctermfg=238   ctermbg=238
-hi Xgray5                     ctermfg=239   ctermbg=239
-hi Xgray6                     ctermfg=240   ctermbg=240
 hi! link lCursor              Cursor
 hi! link Conceal              NonText
 hi! link CursorColumn         ColorColumn
@@ -112,15 +106,19 @@ hi! link xmlTagName           htmlTagName
 hi! link xmlEndTag            xmlTag
 
 " }}}
+" NERDTree: {{{
+hi NERDTreeFlags              ctermfg=8
+hi! link NERDTreeDirSlash     Delimiter
+hi! link NERDTreeCWD          Directory
+hi! link NERDTreeClosable     NERDTreeFlags
+hi! link NERDTreeOpenable     NERDTreeFlags
+" }}}
 " Startify: {{{
 
-hi! link StartifyNumber Statement
-hi! link StartifyFile Normal
-hi! link StartifySlash Normal
-hi! link StartifyHeader Type
-hi! link StartifyFooter Normal
-hi! link StartifySpecial Comment
+" hi! link StartifyNumber       Statement
+hi! link StartifyFile         Normal
+hi! link StartifyHeader       Type
+hi! link StartifySpecial      Comment
 
 " }}}
 
-" vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker :
