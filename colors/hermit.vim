@@ -22,8 +22,8 @@ hi DiffAdd                    ctermfg=2     ctermbg=none
 hi DiffChange                 ctermfg=6     ctermbg=none
 hi DiffDelete                 ctermfg=1     ctermbg=none
 hi DiffText                   ctermfg=3     ctermbg=none
-hi Directory                  ctermfg=4                   cterm=bold
-hi EndOfBuffer                ctermfg=none
+hi Directory                  ctermfg=2                   cterm=bold
+hi EndOfBuffer                ctermfg=0
 hi Error                      ctermfg=15    ctermbg=1
 hi Folded                     ctermfg=8     ctermbg=none  cterm=italic
 hi Function                   ctermfg=3
