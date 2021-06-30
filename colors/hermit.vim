@@ -106,13 +106,6 @@ hi! link xmlTagName           htmlTagName
 hi! link xmlEndTag            xmlTag
 
 " }}}
-" NERDTree: {{{
-hi NERDTreeFlags              ctermfg=8
-hi! link NERDTreeDirSlash     Delimiter
-hi! link NERDTreeCWD          Directory
-hi! link NERDTreeClosable     NERDTreeFlags
-hi! link NERDTreeOpenable     NERDTreeFlags
-" }}}
 " Startify: {{{
 
 " hi! link StartifyNumber       Statement
